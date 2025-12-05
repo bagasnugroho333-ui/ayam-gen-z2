@@ -292,6 +292,27 @@
         transform: translateY(-3px);
         box-shadow: 0 0 30px currentColor;
     }
+
+    /* ====== FOOTER COPYRIGHT ====== */
+    footer {
+        background: #0d0d13;
+        padding: 25px;
+        text-align: center;
+        margin-top: 40px;
+        border-top: 2px solid #ff2d5533;
+    }
+
+    footer p {
+        margin: 8px 0;
+        color: #ffb3c1;
+        font-size: 0.95rem;
+    }
+
+    .copyright-symbol {
+        color: #ff2d55;
+        font-weight: bold;
+        text-shadow: 0 0 10px #ff2d55;
+    }
 </style>
 </head>
 
@@ -424,9 +445,15 @@
     </div>
 
     <p style="text-align:center; margin-top:20px; color: #ffb3c1;">
-        📞 WhatsApp: 081226816221
+        📞 WhatsApp: 085293599105
     </p>
 </section>
+
+<!-- ================= FOOTER COPYRIGHT ================= -->
+<footer>
+    <p><span class="copyright-symbol">©</span> 2024 CHICKEN GEN Z. All Rights Reserved.</p>
+    <p>Website designed by <strong>Bagas Nugroho</strong></p>
+</footer>
 
 <script>
     // Auto open WhatsApp dengan data dari form
@@ -439,7 +466,7 @@
         const jumlah = document.getElementById("jumlah").value;
         const catatan = document.getElementById("catatan").value;
 
-        const waNumber = "6281226816221";
+        const waNumber = "6285293599105";
         const waMessage = `Halo, saya ingin memesan:\n\nNama: ${nama}\nAlamat: ${alamat}\nMenu: ${menu}\nJumlah: ${jumlah}\nCatatan: ${catatan}`;
 
         const waURL = `https://wa.me/${waNumber}?text=${encodeURIComponent(waMessage)}`;
